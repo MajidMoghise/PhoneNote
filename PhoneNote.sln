@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{01CFA0D6-A644-4A3A-8458-94427E622FE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{323DFF95-BC11-455C-A10F-09B5B4564AB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D0F70D34-3151-465C-953D-64A3F08BB8B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{9D35046E-5280-448F-A43D-1D6F8C2C021B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{B46605A7-FECC-4359-A73E-08478D1DC46F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9D54FA88-859B-4D25-8418-F63C61E15EB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C8A4F099-D105-4C5F-B659-03A69FF1351C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneNote.Application", "src\Application\PhoneNote.Application\PhoneNote.Application.csproj", "{3F994D82-1002-4B17-880B-220A6F8CA17B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneNote.Application.Contract", "src\Application\PhoneNote.Application.Contract\PhoneNote.Application.Contract.csproj", "{2C2AE1ED-2148-4CCA-BD27-FC199FC274D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneNote.Domain.Contract", "src\Domain\PhoneNote.Domain.Contract\PhoneNote.Domain.Contract.csproj", "{9A2E925A-4A41-4878-BE50-6AF7CE264250}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneNote.Domain", "src\Domain\PhoneNote.Domain\PhoneNote.Domain.csproj", "{8F97252C-C147-4D66-A250-776A290D2FD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneNote.Presentation.API", "src\Presentation\PhoneNote.Presentation.API\PhoneNote.Presentation.API.csproj", "{AE84E04A-9BB5-43FD-BDFD-DA7013D780BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneNote.Infrastructure.Persists.EFCore", "src\Infrastructure\PhoneNote.Infrastructure.Persists.EFCore\PhoneNote.Infrastructure.Persists.EFCore.csproj", "{9DF3AF2D-A0BA-4DBE-8D1E-744EDE538A45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotePhone.Infrastructure", "src\Infrastructure\NotePhone.Infrastructure\NotePhone.Infrastructure.csproj", "{841CF0F2-1C0A-4568-832D-D3DD2864AA4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneNote.Presentation.Console", "src\Presentation\PhoneNote.Presentation.Console\PhoneNote.Presentation.Console.csproj", "{37865533-FDF9-4DE7-88E8-3DFA83065A6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneNote.Presentation.WinForm", "src\Presentation\PhoneNote.Presentation.WinForm\PhoneNote.Presentation.WinForm.csproj", "{D6F2A19E-E923-491A-B117-4A502AF9F6F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneNote.Presentation.MVC", "src\Presentation\PhoneNote.Presentation.MVC\PhoneNote.Presentation.MVC.csproj", "{866A25F8-EB33-4D53-8DE9-D10D0710EF1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F994D82-1002-4B17-880B-220A6F8CA17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F994D82-1002-4B17-880B-220A6F8CA17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F994D82-1002-4B17-880B-220A6F8CA17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F994D82-1002-4B17-880B-220A6F8CA17B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C2AE1ED-2148-4CCA-BD27-FC199FC274D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2AE1ED-2148-4CCA-BD27-FC199FC274D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2AE1ED-2148-4CCA-BD27-FC199FC274D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2AE1ED-2148-4CCA-BD27-FC199FC274D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A2E925A-4A41-4878-BE50-6AF7CE264250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A2E925A-4A41-4878-BE50-6AF7CE264250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A2E925A-4A41-4878-BE50-6AF7CE264250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A2E925A-4A41-4878-BE50-6AF7CE264250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F97252C-C147-4D66-A250-776A290D2FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F97252C-C147-4D66-A250-776A290D2FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F97252C-C147-4D66-A250-776A290D2FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F97252C-C147-4D66-A250-776A290D2FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE84E04A-9BB5-43FD-BDFD-DA7013D780BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE84E04A-9BB5-43FD-BDFD-DA7013D780BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE84E04A-9BB5-43FD-BDFD-DA7013D780BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE84E04A-9BB5-43FD-BDFD-DA7013D780BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF3AF2D-A0BA-4DBE-8D1E-744EDE538A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF3AF2D-A0BA-4DBE-8D1E-744EDE538A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF3AF2D-A0BA-4DBE-8D1E-744EDE538A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF3AF2D-A0BA-4DBE-8D1E-744EDE538A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841CF0F2-1C0A-4568-832D-D3DD2864AA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841CF0F2-1C0A-4568-832D-D3DD2864AA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841CF0F2-1C0A-4568-832D-D3DD2864AA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841CF0F2-1C0A-4568-832D-D3DD2864AA4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37865533-FDF9-4DE7-88E8-3DFA83065A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37865533-FDF9-4DE7-88E8-3DFA83065A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37865533-FDF9-4DE7-88E8-3DFA83065A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37865533-FDF9-4DE7-88E8-3DFA83065A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6F2A19E-E923-491A-B117-4A502AF9F6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F2A19E-E923-491A-B117-4A502AF9F6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F2A19E-E923-491A-B117-4A502AF9F6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F2A19E-E923-491A-B117-4A502AF9F6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{866A25F8-EB33-4D53-8DE9-D10D0710EF1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866A25F8-EB33-4D53-8DE9-D10D0710EF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866A25F8-EB33-4D53-8DE9-D10D0710EF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866A25F8-EB33-4D53-8DE9-D10D0710EF1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D35046E-5280-448F-A43D-1D6F8C2C021B} = {01CFA0D6-A644-4A3A-8458-94427E622FE1}
+		{B46605A7-FECC-4359-A73E-08478D1DC46F} = {01CFA0D6-A644-4A3A-8458-94427E622FE1}
+		{9D54FA88-859B-4D25-8418-F63C61E15EB0} = {01CFA0D6-A644-4A3A-8458-94427E622FE1}
+		{C8A4F099-D105-4C5F-B659-03A69FF1351C} = {01CFA0D6-A644-4A3A-8458-94427E622FE1}
+		{3F994D82-1002-4B17-880B-220A6F8CA17B} = {B46605A7-FECC-4359-A73E-08478D1DC46F}
+		{2C2AE1ED-2148-4CCA-BD27-FC199FC274D2} = {B46605A7-FECC-4359-A73E-08478D1DC46F}
+		{9A2E925A-4A41-4878-BE50-6AF7CE264250} = {9D54FA88-859B-4D25-8418-F63C61E15EB0}
+		{8F97252C-C147-4D66-A250-776A290D2FD6} = {9D54FA88-859B-4D25-8418-F63C61E15EB0}
+		{AE84E04A-9BB5-43FD-BDFD-DA7013D780BF} = {9D35046E-5280-448F-A43D-1D6F8C2C021B}
+		{9DF3AF2D-A0BA-4DBE-8D1E-744EDE538A45} = {C8A4F099-D105-4C5F-B659-03A69FF1351C}
+		{841CF0F2-1C0A-4568-832D-D3DD2864AA4F} = {C8A4F099-D105-4C5F-B659-03A69FF1351C}
+		{37865533-FDF9-4DE7-88E8-3DFA83065A6C} = {9D35046E-5280-448F-A43D-1D6F8C2C021B}
+		{D6F2A19E-E923-491A-B117-4A502AF9F6F4} = {9D35046E-5280-448F-A43D-1D6F8C2C021B}
+		{866A25F8-EB33-4D53-8DE9-D10D0710EF1A} = {9D35046E-5280-448F-A43D-1D6F8C2C021B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08ADCDA2-A68B-4E11-AA7F-24E60CA583B9}
+	EndGlobalSection
+EndGlobal
