@@ -1,5 +1,4 @@
-﻿using IDP.Presentation.API.Middelwares;
-using Microsoft.AspNetCore.Localization;
+﻿using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Localization;
 using System.Globalization;
 

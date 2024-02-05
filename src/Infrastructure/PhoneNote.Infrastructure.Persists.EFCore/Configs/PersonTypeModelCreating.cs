@@ -5,7 +5,7 @@ namespace PhoneNote.Infrastructure.Persists.EFCore.Configs
 {
     internal static class PersonTypeModelCreating 
     {       
-        internal static ModelBuilder PersonConfig(this ModelBuilder modelBuilder)
+        internal static ModelBuilder PersonTypeConfig(this ModelBuilder modelBuilder)
         {
            return modelBuilder.Entity<PersonType>(entity =>
            {

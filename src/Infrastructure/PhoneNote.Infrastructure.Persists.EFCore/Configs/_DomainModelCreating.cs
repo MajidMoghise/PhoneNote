@@ -14,6 +14,8 @@ namespace PhoneNote.Infrastructure.Persists.EFCore.Configs
         {
             modelBuilder.PersonConfig();
             modelBuilder.PhoneConfig();
+            modelBuilder.PhoneTypeConfig();
+            modelBuilder.PersonTypeConfig();
             return modelBuilder;
         }
     }

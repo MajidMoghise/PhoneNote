@@ -18,7 +18,7 @@ namespace PhoneNote.Infrastructure.Persists.EFCore
                 )
             : base(options)
         {
-            _connectionString = configuration.GetSection("Connections:SqlConnection").Value.ToString();
+            _connectionString = configuration.GetSection("Connections:SqlConnection").Value?.ToString();
             _configuration = configuration;
 
         }

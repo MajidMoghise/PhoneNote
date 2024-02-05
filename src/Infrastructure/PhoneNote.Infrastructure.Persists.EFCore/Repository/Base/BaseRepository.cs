@@ -33,6 +33,14 @@ namespace PhoneNote.Infrastructure.Persists.EFCore.Persists.EFCore.Repository.Ba
             return entity;
         }
 
+        public async Task<IEnumerable<TEntity>> CreateListAsync(IEnumerable<TEntity> entity)
+        {
+            await _unitOfWork.BeginTransactionAsync();
+            await _entity.AddRangeAsync(entity);
+            await _context.SaveChangesAsync();
+            return entity;
+        }
+
         public async Task DeleteAsync(TEntity entity)
         {
             await _unitOfWork.BeginTransactionAsync();

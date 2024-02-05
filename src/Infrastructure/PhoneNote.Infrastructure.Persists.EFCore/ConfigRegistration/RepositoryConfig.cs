@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using PhoneNote.Domain.Contract.Contracts.Base;
 using PhoneNote.Domain.Contract.Contracts.People;
 using PhoneNote.Domain.Contract.Contracts.Phones;
+using PhoneNote.Infrastructure.Persists.EFCore.Repository.Base;
 using PhoneNote.Infrastructure.Persists.EFCore.Repository.People;
 using PhoneNote.Infrastructure.Persists.EFCore.Repository.Phones;
 
@@ -12,7 +14,8 @@ namespace PhoneNote.Infrastructure.Persists.EFCore.ConfigRegistration
         {
 
           return  services.AddScoped<IPhoneRepository, PhoneRepository>()
-                    .AddScoped<IPersonRepository, PersonRepository>();
+                          .AddScoped<IPersonRepository, PersonRepository>()
+                          .AddScoped<IUnitOfWork, UnitOfWork>();
 
         }
     }

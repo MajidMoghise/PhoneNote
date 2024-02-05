@@ -1,9 +1,9 @@
-﻿using IDP.Application.Contract.Services.Base.Dtos;
-using IDP.Application.Contract.Services.OIDCs.Dtos;
+﻿
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using PhoneNote.Application.Contract.Base.Dtos;
 
 namespace PhoneNote.Presentation.API.Controllers._Base
 {
@@ -11,31 +11,29 @@ namespace PhoneNote.Presentation.API.Controllers._Base
     // [ApiController]
     public class BasicController : ControllerBase
     {
+        const string OperationHasBeenSuccessful = "Operation has been successful";
         public BasicController()
         {
 
         }
         [NonAction]
-        public OkObjectResult OkResult<TResult>([ActionResultObjectValue] TResult value) where TResult : IBaseResponseDto
+        public OkObjectResult OkResult<TResult>([ActionResultObjectValue] TResult value) where TResult : BaseResponse
         {
-            var msg = Application.Resources.Resources.OperationIsSuccessFull;
-            var result = new DataResponseDto<TResult> { Data = value, Message = msg };
+            var result = new BaseResponseDto<TResult> { Data = value, Message = OperationHasBeenSuccessful };
             return new OkObjectResult(result);
 
         }
         [NonAction]
-        public OkObjectResult OkResult<TResult>([ActionResultObjectValue] IEnumerable<TResult> value) where TResult : IBaseResponseDto
+        public OkObjectResult OkResult<TResult>([ActionResultObjectValue] IEnumerable<TResult> value) where TResult : BaseResponse
         {
-            var msg = Application.Resources.Resources.OperationIsSuccessFull;
-            var result = new ListDataResponseDto<TResult> { Data = value, Message = msg };
+            var result = new PagingResponseDto<TResult> { Data = value, Message = OperationHasBeenSuccessful };
             return new OkObjectResult(result);
 
         }
         [NonAction]
         public OkObjectResult OkResult()
         {
-            var msg = Application.Resources.Resources.OperationIsSuccessFull;
-            var result = new ResponseDto { Message = msg };
+            var result = new BaseResponse { Message = OperationHasBeenSuccessful };
             return new OkObjectResult(result);
 
         }
